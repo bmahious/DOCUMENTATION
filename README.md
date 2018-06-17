@@ -3,14 +3,35 @@
 
 ### HTML5
 
-HTML5 (HyperText Markup Language 5) est la dernière révision majeure du HTML (format de données conçu pour représenter les pages web). Cette version a été finalisée le 28 octobre 2014. HTML5 spécifie deux syntaxes d'un modèle abstrait défini en termes de DOM : **HTML5 et XHTML5**. Le langage comprend également une couche application avec de nombreuses API, ainsi qu'un algorithme afin de pouvoir traiter les documents à la syntaxe non conforme. Le travail a été repris par le W3C en mars 2007 après avoir été lancé par le WHATWG. Les deux organisations travaillent en parallèle sur le même document afin de maintenir une version unique de la technologie. Le W3C clôt les ajouts de fonctionnalités le 22 mai 2011, annonçant une finalisation de la spécification en 20141, et encourage les développeurs Web à utiliser HTML 5 dès ce moment. Fin 2016, la version 5.1 est officiellement publiée et présente plusieurs nouveautés qui doivent faciliter le travail des développeurs d'applications Web2.
+HTML (HyperText Markup Language) est le bloc de construction le plus basique du Web. Il décrit et définit le contenu d'une page Web avec la mise en page de base de la page Web. D'autres technologies que le HTML sont généralement utilisées pour décrire l'apparence / la présentation d'une page Web (CSS) ou la fonctionnalité / comportement (JavaScript).
+
+"HyperTexte" fait référence aux liens qui relient les pages Web les unes aux autres, soit sur un seul site Web, soit entre des sites Web. Les liens sont un aspect fondamental du Web. En téléchargeant du contenu sur Internet et en le reliant à des pages créées par d'autres personnes, vous devenez un participant actif sur le Web.
+
+HTML utilise le "balisage" pour annoter du texte, des images et d'autres contenus à afficher dans un navigateur Web. Le balisage HTML inclut des "éléments" spéciaux tels que <head>, <title>, <body>, <entête>, <footer>, <article>, <section>, <p>, <div>, <span>, < img>, <aside>, <audio>, <canvas>, <datalist>, <détails>, <embed>, <nav>, <sortie>, <progression>, <vidéo> et bien d'autres.
+
+Les balises HTML sont insensibles à la casse. Autrement dit, ils peuvent être écrits en majuscules, en minuscules ou en mélange. Exemple La balise <title> peut être écrite comme <Title>, <TITLE> ou de toute autre manière.
 
 ### CSS3
-Les feuilles de style en cascade, généralement appelées CSS de l'anglais **Cascading Style Sheets**, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
+(CSS) Cascading Style Sheets est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit dans un langage de balisage comme HTML. Il s'agit d'une technologie de base du World Wide Web, aux côtés de HTML et JavaScript.
+CSS3 est la dernière évolution du langage Cascading Style Sheets et vise à étendre CSS2.1. Il apporte beaucoup de nouveautés tant attendues, comme des coins arrondis, des ombres, des dégradés, des transitions ou des animations, ainsi que de nouvelles mises en page comme des multi-colonnes, des boîtes flexibles ou des mises en réseau. Les parties expérimentales sont préfixées par le fournisseur et doivent être évitées dans les environnements de production, ou utilisées avec une extrême prudence car leur syntaxe et leur sémantique peuvent changer à l'avenir.
+
 * structure
 * Selecteur (div, .nomDiv, .#id)
 * Proprieté (ex. color)
 * Attribut (ex. red)
+
+Voici la structure minimale d'une page HTML:
+```html
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>HTML basics</title>
+    </head>
+    <body>
+    </body>
+  </html>
+```
 
 ```html
 <!-- mainList = Block -->
