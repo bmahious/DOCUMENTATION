@@ -125,6 +125,54 @@ Exemple en CSS du rendu :
 }
 ```
 
+
+## Font-Face
+
+Grâce à @font-face on peut utiliser des polices de caractère non-standard, c’est-à-dire
+des polices de caractère autre que celles considérée comme étant 100% compatible
+à tous les navigateurs pour le web. (Arial, Helvetica, Times New Roman, Times,
+Courier, Verdana, etc.).
+En permettant aux auteurs de fournir leurs propres polices, il n'est plus nécessaire de
+dépendre uniquement des polices qui sont installées sur les postes des utilisateurs.
+La règle @font-face peut être utilisée au niveau global d'une feuille de style et
+également au sein d'un groupe lié à une règle @ conditionnelle.
+
+
+@font face
+Définition :
+C’est une règle qui permet aux utilisateurs d’intégrer des différentes polices d’écritures qui
+sont pas préinstaller sur leurs système, tout en les téléchargent depuis un navigateur. En
+d’autres termes, c’est une réponse du CSS aux besoins des webdesigners.
+
+Rôle:
+@font face est une typographie qu’on intègre dans la partie style dans nos fichiers CSS. Son
+rôle est de transformer le texte souhaité au format demandé par l’utilisateur.
+
+Utilisation :
+• Ecrire un texte dans notre fichier HTML sous format : <P>NOTRE TEXTE < /P> par exemple :
+<P>je suis un paragraphe < /P> ;
+• Télécharger la police qu’on veut intégrer dans notre ficher CSS par exemple « the blacklist »;
+• Aller dans le fichier CSS pour intégrer la police tout en incluant @font face, font
+family « name », src, url (format.woff)... ;
+• Et enfin cibler le paragraphe <P>.
+➢ EXEMPLE :
+❖ @font face {
+Font family : ‘ma police’ ;
+src : url ('the_blacklist-webfont.woff2') format('woff2'),
+url('the_blacklist-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+• Puis en cible le paragraphe <P> avec :
+P {
+Font family : ’ma police’ ;
+}
+
+✓Et on aura le résultant.
+
+
+
 ## Pseudo attributs
 
 Les pseudo attributs `before` et `after` permettent de créer des noeuds HTML en CSS.
